@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "5014004443",
+    "project_id": "medmate-5221c",
+    "storage_bucket": "medmate-5221c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5014004443:android:7fbcbb1f3e5a41ed3e62fe",
+        "android_client_info": {
+          "package_name": "com.example.medmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5014004443-u1ot1l2v9vvcae58dvlc56ccbk2ptpq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-VoWC2yWulhSdfXYIrcXMeouhqQnFpes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5014004443-u1ot1l2v9vvcae58dvlc56ccbk2ptpq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
