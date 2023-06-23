@@ -102,29 +102,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Atau masuk melalui"
-        android:textAlignment="center"
-        android:textColor="@color/black" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        app:srcCompat="@drawable/ic_google" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="150dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
