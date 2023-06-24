@@ -106,6 +106,7 @@ public class DetailActivity extends AppCompatActivity {
                                 .placeholder(R.drawable.ic_launcher_background)
                                 .error(R.drawable.ic_launcher_background);
 
+                        // Load gambar
                         Glide.with(DetailActivity.this)
                                 .load(data.getImageUrl())
                                 .apply(requestOptions)
@@ -158,7 +159,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void downloadImage(String imageUrl) {
-        // Use MediaStore API to download and save the image
+        // MediaStore API untuk download and save the image
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(imageUrl));
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "image.jpg");
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);

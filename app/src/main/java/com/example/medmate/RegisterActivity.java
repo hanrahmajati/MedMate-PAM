@@ -56,6 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
             } else if (!password.equals(confpassword)) {
                 Toast.makeText(RegisterActivity.this, "Konfirmasi password tidak sama", Toast.LENGTH_SHORT).show();
             } else {
+                // Rubah ke _ karena ga boleh di firebase database karena dipake dalam jalurnya
                 String emailPath = email.replace(".", "_").replace("@", "_");
                 databaseReference.child(emailPath).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -70,6 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
                             Toast.makeText(RegisterActivity.this, "Akun berhasil dibuat", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                             startActivity(intent);
+                            finish();
                         }
                     }
 

@@ -108,11 +108,11 @@ public class MainActivity extends AppCompatActivity implements DataAdapter.OnIte
         databaseReference.addValueEventListener(valueEventListener);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        databaseReference.removeEventListener(valueEventListener);
-    }
+    //@Override
+    //protected void onStop() {
+        //super.onStop();
+        //databaseReference.removeEventListener(valueEventListener);
+    //}
 
     @Override
     public void onItemClick(int position) {
