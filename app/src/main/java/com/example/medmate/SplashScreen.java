@@ -24,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
 
         // Menggunakan Handler untuk menunda perpindahan ke Activity berikutnya
-        // new Handler().postDelayed(() -> {
+        new Handler().postDelayed(() -> {
             if (currentUser != null) {
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(intent);
@@ -33,6 +33,6 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(intent);
                 finish(); // Menutup activity ini agar tidak dapat dikembalikan dengan tombol back
             }
-        // }, SPLASH_DELAY);
+        }, SPLASH_DELAY);
     }
 }
